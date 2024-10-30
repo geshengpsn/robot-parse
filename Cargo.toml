@@ -10,5 +10,7 @@ nary_tree = "0.4.3"
 petgraph = "0.6"
 # termtree = "0.4.1"
 urdf-rs = "0.9.0"
+liealg = { path = "../liealg" }
+nalgebra = "0.33"
 # sdformat-rs = { git = "https://github.com/azm-project/sdformat-rs" }
 # anyhow = "1"
