@@ -1,5 +1,5 @@
 use std::{
-    collections::{HashMap, HashSet},
+    collections::{HashMap},
     path::Path,
 };
 
@@ -91,7 +91,7 @@ impl MultiBodyGraph {
 
 pub struct BfsIter<'a> {
     graph: &'a petgraph::graphmap::DiGraphMap<usize, ()>,
-    bfs: Bfs<usize, HashSet<usize>>,
+    bfs: Bfs<usize, hashbrown::hash_set::HashSet<usize>>,
 }
 
 impl<'a> Iterator for BfsIter<'a> {
